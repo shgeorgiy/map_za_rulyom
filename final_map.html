@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6286890d798775628d431203af20d11d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6286890d798775628d431203af20d11d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6286890d798775628d431203af20d11d = L.map(
+                "map_6286890d798775628d431203af20d11d",
+                {
+                    center: [56.0, 40.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d22b0c8f7eed70084f7d92e7ee8544eb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d22b0c8f7eed70084f7d92e7ee8544eb.addTo(map_6286890d798775628d431203af20d11d);
+        
+    
+            var tile_layer_3ed7309068fc02bbe9b7ecc805f2ff93 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri World Physical Map",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3ed7309068fc02bbe9b7ecc805f2ff93.addTo(map_6286890d798775628d431203af20d11d);
+        
+    
+            var marker_cluster_6939bb6e40dec5b324c1ee43640593a3 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_841969895591ea0ed6b04dcd3b8ac676 = L.circleMarker(
+                [56.9493977, 24.1051846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_a8a4e4fcb8942da9baa9462c4701d1bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b31be7ee7c7a5daaac1e254bacfa7046 = $(`<div id="html_b31be7ee7c7a5daaac1e254bacfa7046" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Рига</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_a8a4e4fcb8942da9baa9462c4701d1bc.setContent(html_b31be7ee7c7a5daaac1e254bacfa7046);
+            
+        
+
+        circle_marker_841969895591ea0ed6b04dcd3b8ac676.bindPopup(popup_a8a4e4fcb8942da9baa9462c4701d1bc)
+        ;
+
+        
+    
+    
+            var circle_marker_d359268e82e2d3cd27a9e7178bad040b = L.circleMarker(
+                [55.625578, 37.6063916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_a6f9fa5b2fba978e2f804c388e660496 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_453755d00543c11a2bfcac8b8f28b0b2 = $(`<div id="html_453755d00543c11a2bfcac8b8f28b0b2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Москва</b><br>"        <i>Москва-Кисловодск вчетвером на одном &quot;Харлее&quot;</i>     </div>     </div>`)[0];
+                popup_a6f9fa5b2fba978e2f804c388e660496.setContent(html_453755d00543c11a2bfcac8b8f28b0b2);
+            
+        
+
+        circle_marker_d359268e82e2d3cd27a9e7178bad040b.bindPopup(popup_a6f9fa5b2fba978e2f804c388e660496)
+        ;
+
+        
+    
+    
+            var circle_marker_4b2b182c5db1e4efa201eb36f7bcd910 = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_04cff99ebe3359cb325b178b00de95dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44ff08d895e6d9ec533e6af738ec3830 = $(`<div id="html_44ff08d895e6d9ec533e6af738ec3830" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Чикаго</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_04cff99ebe3359cb325b178b00de95dd.setContent(html_44ff08d895e6d9ec533e6af738ec3830);
+            
+        
+
+        circle_marker_4b2b182c5db1e4efa201eb36f7bcd910.bindPopup(popup_04cff99ebe3359cb325b178b00de95dd)
+        ;
+
+        
+    
+    
+            var circle_marker_5f64003a052154d5f8da9a5835817476 = L.circleMarker(
+                [55.7988615, 37.5132476],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_97489c75e24cf3806afbe120d73fb313 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f90e22939a5a7da999954e24d3fc98f9 = $(`<div id="html_f90e22939a5a7da999954e24d3fc98f9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Москва, Ленинград</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_97489c75e24cf3806afbe120d73fb313.setContent(html_f90e22939a5a7da999954e24d3fc98f9);
+            
+        
+
+        circle_marker_5f64003a052154d5f8da9a5835817476.bindPopup(popup_97489c75e24cf3806afbe120d73fb313)
+        ;
+
+        
+    
+    
+            var circle_marker_7d177b7f94ec1ba4055154541390cca6 = L.circleMarker(
+                [51.3406321, 12.3747329],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_3f63aba5bc07ee616fb02108037bb92a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e97e29da6783e57de99d3e7d04b772a3 = $(`<div id="html_e97e29da6783e57de99d3e7d04b772a3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Лейпциг</b><br>"        <i>Международная выставка грузовиков и автомобилей специального назначения</i>     </div>     </div>`)[0];
+                popup_3f63aba5bc07ee616fb02108037bb92a.setContent(html_e97e29da6783e57de99d3e7d04b772a3);
+            
+        
+
+        circle_marker_7d177b7f94ec1ba4055154541390cca6.bindPopup(popup_3f63aba5bc07ee616fb02108037bb92a)
+        ;
+
+        
+    
+    
+            var circle_marker_d1bbe86ae31b96fae79ac5b1ee7cf259 = L.circleMarker(
+                [58.6162738, 50.1356834],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_106275f2c72f6cd5e6c78b1920099821 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25f0c05b0bb1a43aac5c3e0e340ea343 = $(`<div id="html_25f0c05b0bb1a43aac5c3e0e340ea343" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Vyatka</b><br>"        <i>Побеждающий автомобиль</i>     </div>     </div>`)[0];
+                popup_106275f2c72f6cd5e6c78b1920099821.setContent(html_25f0c05b0bb1a43aac5c3e0e340ea343);
+            
+        
+
+        circle_marker_d1bbe86ae31b96fae79ac5b1ee7cf259.bindPopup(popup_106275f2c72f6cd5e6c78b1920099821)
+        ;
+
+        
+    
+    
+            var circle_marker_861886748fa64cdacde86d6a1e4ee700 = L.circleMarker(
+                [39.7589478, -84.1916069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_9672aa5ecc89f2e83096a7f966ea291d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e2eb974b96e78577b1dc3ae1343ee9a = $(`<div id="html_2e2eb974b96e78577b1dc3ae1343ee9a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Dayton</b><br>"        <i>Мировой рекорд автомобильной скорости</i>     </div>     </div>`)[0];
+                popup_9672aa5ecc89f2e83096a7f966ea291d.setContent(html_2e2eb974b96e78577b1dc3ae1343ee9a);
+            
+        
+
+        circle_marker_861886748fa64cdacde86d6a1e4ee700.bindPopup(popup_9672aa5ecc89f2e83096a7f966ea291d)
+        ;
+
+        
+    
+    
+            var circle_marker_5cb2ea25ba1e21188446ada8c55eec67 = L.circleMarker(
+                [59.9606739, 30.1586551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_dd1709a13a6243ed74e6a87d8f96fffb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47ad033705222fe20aa7577bbcf3e322 = $(`<div id="html_47ad033705222fe20aa7577bbcf3e322" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Ленинград</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_dd1709a13a6243ed74e6a87d8f96fffb.setContent(html_47ad033705222fe20aa7577bbcf3e322);
+            
+        
+
+        circle_marker_5cb2ea25ba1e21188446ada8c55eec67.bindPopup(popup_dd1709a13a6243ed74e6a87d8f96fffb)
+        ;
+
+        
+    
+    
+            var circle_marker_3660f0a5f5fb2e271b97a3ff5dd5205b = L.circleMarker(
+                [46.4843023, 30.7322878],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_09d233494f30ae77e5bf92a0033a1a57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c94560ff2601b3a2f3c2aea7ee18c487 = $(`<div id="html_c94560ff2601b3a2f3c2aea7ee18c487" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Одесса</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_09d233494f30ae77e5bf92a0033a1a57.setContent(html_c94560ff2601b3a2f3c2aea7ee18c487);
+            
+        
+
+        circle_marker_3660f0a5f5fb2e271b97a3ff5dd5205b.bindPopup(popup_09d233494f30ae77e5bf92a0033a1a57)
+        ;
+
+        
+    
+    
+            var circle_marker_301d389e479a18cded6ad3bc35dfa0cc = L.circleMarker(
+                [57.6508432, 39.8718634],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_ba1ec29c10025a363fd497e6536af75d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_059ba193aa694c603d461f581ddb29d9 = $(`<div id="html_059ba193aa694c603d461f581ddb29d9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Ярославль</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_ba1ec29c10025a363fd497e6536af75d.setContent(html_059ba193aa694c603d461f581ddb29d9);
+            
+        
+
+        circle_marker_301d389e479a18cded6ad3bc35dfa0cc.bindPopup(popup_ba1ec29c10025a363fd497e6536af75d)
+        ;
+
+        
+    
+    
+            var circle_marker_f506e2a51f9a90a91a05a65ea26fbc49 = L.circleMarker(
+                [49.9923181, 36.2310146],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_f52cbf7c3d5b047f98fb7d7641dd614f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f82236655175360dbe64866de85fc14 = $(`<div id="html_9f82236655175360dbe64866de85fc14" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Харьков</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_f52cbf7c3d5b047f98fb7d7641dd614f.setContent(html_9f82236655175360dbe64866de85fc14);
+            
+        
+
+        circle_marker_f506e2a51f9a90a91a05a65ea26fbc49.bindPopup(popup_f52cbf7c3d5b047f98fb7d7641dd614f)
+        ;
+
+        
+    
+    
+            var circle_marker_e1b4a5eb5f42e364e5fce75fb255f392 = L.circleMarker(
+                [47.2222596, 39.7198736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_4f5a85d25f5f88b13d1c8c7e8f472bfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1397eb91bc35831a767251e78e5ba46 = $(`<div id="html_e1397eb91bc35831a767251e78e5ba46" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Ростов-на-Дону</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_4f5a85d25f5f88b13d1c8c7e8f472bfa.setContent(html_e1397eb91bc35831a767251e78e5ba46);
+            
+        
+
+        circle_marker_e1b4a5eb5f42e364e5fce75fb255f392.bindPopup(popup_4f5a85d25f5f88b13d1c8c7e8f472bfa)
+        ;
+
+        
+    
+    
+            var circle_marker_5de0179441367caf24795cf060c137ec = L.circleMarker(
+                [40.1556494, 44.038797],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_2f78fac8876c9fd8b8acafbbe94a4191 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91748936c27118f3c0e2d724121ebcbb = $(`<div id="html_91748936c27118f3c0e2d724121ebcbb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Armavir</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_2f78fac8876c9fd8b8acafbbe94a4191.setContent(html_91748936c27118f3c0e2d724121ebcbb);
+            
+        
+
+        circle_marker_5de0179441367caf24795cf060c137ec.bindPopup(popup_2f78fac8876c9fd8b8acafbbe94a4191)
+        ;
+
+        
+    
+    
+            var circle_marker_aa88aa014fa88839107fb7ba0e2b6b3c = L.circleMarker(
+                [40.5928159, 71.8919178],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_b711f1f46a74534ae4a5ae7265163630 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30c60610c7c9de76fe7e07dea86b6a4b = $(`<div id="html_30c60610c7c9de76fe7e07dea86b6a4b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Donbass</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_b711f1f46a74534ae4a5ae7265163630.setContent(html_30c60610c7c9de76fe7e07dea86b6a4b);
+            
+        
+
+        circle_marker_aa88aa014fa88839107fb7ba0e2b6b3c.bindPopup(popup_b711f1f46a74534ae4a5ae7265163630)
+        ;
+
+        
+    
+    
+            var circle_marker_f08287bd461892b619d766358efea90d = L.circleMarker(
+                [52.9709262, 36.0642127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_a8bc337890238ac56bf26ab531a909c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad697158903e34b5ba27830784919f8d = $(`<div id="html_ad697158903e34b5ba27830784919f8d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Oryol</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_a8bc337890238ac56bf26ab531a909c1.setContent(html_ad697158903e34b5ba27830784919f8d);
+            
+        
+
+        circle_marker_f08287bd461892b619d766358efea90d.bindPopup(popup_a8bc337890238ac56bf26ab531a909c1)
+        ;
+
+        
+    
+    
+            var circle_marker_0f72e8bd152ad36bd7a2e2dfdb7716c6 = L.circleMarker(
+                [53.9024716, 27.5618225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_3d456fe9d51cee951c77ace2fafee24d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_620963058384b081b7c218b1e0e65d85 = $(`<div id="html_620963058384b081b7c218b1e0e65d85" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Minsk</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_3d456fe9d51cee951c77ace2fafee24d.setContent(html_620963058384b081b7c218b1e0e65d85);
+            
+        
+
+        circle_marker_0f72e8bd152ad36bd7a2e2dfdb7716c6.bindPopup(popup_3d456fe9d51cee951c77ace2fafee24d)
+        ;
+
+        
+    
+    
+            var circle_marker_13e8b11a738887c833db56ea821663eb = L.circleMarker(
+                [58.0489536, 38.8558908],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_d2df7c52ddc6d9e0175070dc26700345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_566f6fd3b4c956845986161f52a40675 = $(`<div id="html_566f6fd3b4c956845986161f52a40675" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Rybinsk</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_d2df7c52ddc6d9e0175070dc26700345.setContent(html_566f6fd3b4c956845986161f52a40675);
+            
+        
+
+        circle_marker_13e8b11a738887c833db56ea821663eb.bindPopup(popup_d2df7c52ddc6d9e0175070dc26700345)
+        ;
+
+        
+    
+    
+            var circle_marker_2137053c3ba3f34858887ba49acafae2 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_d4568e928d5499c634d39145eaf7b818 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51f0c307a4851839f3c31edb83adb179 = $(`<div id="html_51f0c307a4851839f3c31edb83adb179" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Нью-Йорк</b><br>"        <i>Еще раз об автомобильной войне в Америке</i>     </div>     </div>`)[0];
+                popup_d4568e928d5499c634d39145eaf7b818.setContent(html_51f0c307a4851839f3c31edb83adb179);
+            
+        
+
+        circle_marker_2137053c3ba3f34858887ba49acafae2.bindPopup(popup_d4568e928d5499c634d39145eaf7b818)
+        ;
+
+        
+    
+    
+            var circle_marker_6158d5cc67f77301a311f04d8650b199 = L.circleMarker(
+                [41.6934591, 44.8014495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_ad1905f257b0f4c200a617346de22818 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adbd746a47d1d2a399256529426c530b = $(`<div id="html_adbd746a47d1d2a399256529426c530b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Тифлис</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_ad1905f257b0f4c200a617346de22818.setContent(html_adbd746a47d1d2a399256529426c530b);
+            
+        
+
+        circle_marker_6158d5cc67f77301a311f04d8650b199.bindPopup(popup_ad1905f257b0f4c200a617346de22818)
+        ;
+
+        
+    
+    
+            var circle_marker_40732869060690152ddb0d2352544674 = L.circleMarker(
+                [40.5928159, 71.8919178],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_41a0efae489d193d18e39bb736e9a8d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c6ec4384d241bf5ab15916893a9c8f3 = $(`<div id="html_8c6ec4384d241bf5ab15916893a9c8f3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Донбасс</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_41a0efae489d193d18e39bb736e9a8d9.setContent(html_8c6ec4384d241bf5ab15916893a9c8f3);
+            
+        
+
+        circle_marker_40732869060690152ddb0d2352544674.bindPopup(popup_41a0efae489d193d18e39bb736e9a8d9)
+        ;
+
+        
+    
+    
+            var circle_marker_1da2545be2414025cfe9c315c65d612d = L.circleMarker(
+                [47.5137835, 142.5544634],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_f92b1aa8d11b7d42bf310cc800a1847b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2255a7d4139ba52747e8a7e62f90eea5 = $(`<div id="html_2255a7d4139ba52747e8a7e62f90eea5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Тихорецкая</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_f92b1aa8d11b7d42bf310cc800a1847b.setContent(html_2255a7d4139ba52747e8a7e62f90eea5);
+            
+        
+
+        circle_marker_1da2545be2414025cfe9c315c65d612d.bindPopup(popup_f92b1aa8d11b7d42bf310cc800a1847b)
+        ;
+
+        
+    
+    
+            var circle_marker_193d4e6b5aaf3d4a0884b34cf9cbad2b = L.circleMarker(
+                [45.4344413, 40.5750274],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_74010480630865435e8d62a858dcec23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8aa47907145b911babf3b9838a5fb882 = $(`<div id="html_8aa47907145b911babf3b9838a5fb882" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Кропоткин</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_74010480630865435e8d62a858dcec23.setContent(html_8aa47907145b911babf3b9838a5fb882);
+            
+        
+
+        circle_marker_193d4e6b5aaf3d4a0884b34cf9cbad2b.bindPopup(popup_74010480630865435e8d62a858dcec23)
+        ;
+
+        
+    
+    
+            var circle_marker_86669b883e88f44400f6746e95376a22 = L.circleMarker(
+                [44.9993585, 41.1294061],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_9b38b297c2de82e979d2ed94df173e43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa71885d9b55b872a7335c171efc833a = $(`<div id="html_aa71885d9b55b872a7335c171efc833a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Армавир</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_9b38b297c2de82e979d2ed94df173e43.setContent(html_aa71885d9b55b872a7335c171efc833a);
+            
+        
+
+        circle_marker_86669b883e88f44400f6746e95376a22.bindPopup(popup_9b38b297c2de82e979d2ed94df173e43)
+        ;
+
+        
+    
+    
+            var circle_marker_285c951c08d9df5378667d479d1caab1 = L.circleMarker(
+                [43.024593, 44.68211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_340ec84528266315bdce8da99869cf40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5e3d28848ec51c4255416ef07946287 = $(`<div id="html_d5e3d28848ec51c4255416ef07946287" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Владикавказ</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_340ec84528266315bdce8da99869cf40.setContent(html_d5e3d28848ec51c4255416ef07946287);
+            
+        
+
+        circle_marker_285c951c08d9df5378667d479d1caab1.bindPopup(popup_340ec84528266315bdce8da99869cf40)
+        ;
+
+        
+    
+    
+            var circle_marker_274f9a1cd243fdd910534c6efe7f5410 = L.circleMarker(
+                [43.735584, 44.653614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_2aa05e3698ce92a577613fa84ea7059d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86b56c86c66989ec256f9c942b459add = $(`<div id="html_86b56c86c66989ec256f9c942b459add" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Моздок</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_2aa05e3698ce92a577613fa84ea7059d.setContent(html_86b56c86c66989ec256f9c942b459add);
+            
+        
+
+        circle_marker_274f9a1cd243fdd910534c6efe7f5410.bindPopup(popup_2aa05e3698ce92a577613fa84ea7059d)
+        ;
+
+        
+    
+    
+            var circle_marker_36db241eb377d26b70fd070c2abc91af = L.circleMarker(
+                [41.7055336, 44.770089],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_c9eac01a963133c0775ab8c25fa66fc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c68cc5972b7e25598c9274e37faa0e5 = $(`<div id="html_8c68cc5972b7e25598c9274e37faa0e5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Мцхеты</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_c9eac01a963133c0775ab8c25fa66fc2.setContent(html_8c68cc5972b7e25598c9274e37faa0e5);
+            
+        
+
+        circle_marker_36db241eb377d26b70fd070c2abc91af.bindPopup(popup_c9eac01a963133c0775ab8c25fa66fc2)
+        ;
+
+        
+    
+    
+            var circle_marker_38bb0907fca8ded26d8b190670af3f4d = L.circleMarker(
+                [50.0189559, 24.1751964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_7c0f3c317ee572061666fa692f0f8a7e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53da59da5f7eef52aaec205cdb6202a7 = $(`<div id="html_53da59da5f7eef52aaec205cdb6202a7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Гори</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_7c0f3c317ee572061666fa692f0f8a7e.setContent(html_53da59da5f7eef52aaec205cdb6202a7);
+            
+        
+
+        circle_marker_38bb0907fca8ded26d8b190670af3f4d.bindPopup(popup_7c0f3c317ee572061666fa692f0f8a7e)
+        ;
+
+        
+    
+    
+            var circle_marker_535e6fa7d66ed75b57da193cd5eb3682 = L.circleMarker(
+                [41.7535704, 42.8319346],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_d79157b4022f563e893b6356e1c04e07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee984f0a75603b1aeeb24d4443f20baf = $(`<div id="html_ee984f0a75603b1aeeb24d4443f20baf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Абастуман</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_d79157b4022f563e893b6356e1c04e07.setContent(html_ee984f0a75603b1aeeb24d4443f20baf);
+            
+        
+
+        circle_marker_535e6fa7d66ed75b57da193cd5eb3682.bindPopup(popup_d79157b4022f563e893b6356e1c04e07)
+        ;
+
+        
+    
+    
+            var circle_marker_2a602d1a4e77e7e36a362facda9dee43 = L.circleMarker(
+                [33.3061701, 44.3872213],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_103e01478e7919f4641fcc857053d8b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_766f9aeb21c4761798bac16b08ed87aa = $(`<div id="html_766f9aeb21c4761798bac16b08ed87aa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Багдад</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_103e01478e7919f4641fcc857053d8b8.setContent(html_766f9aeb21c4761798bac16b08ed87aa);
+            
+        
+
+        circle_marker_2a602d1a4e77e7e36a362facda9dee43.bindPopup(popup_103e01478e7919f4641fcc857053d8b8)
+        ;
+
+        
+    
+    
+            var circle_marker_2a238dafd5607168851cc4386cf23426 = L.circleMarker(
+                [44.5181484, 39.2932131],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_209c92a356ff9775cb26b65cb58594e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f885b04341bc4dec7bb44beb752f6a1 = $(`<div id="html_9f885b04341bc4dec7bb44beb752f6a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Кутаис</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_209c92a356ff9775cb26b65cb58594e1.setContent(html_9f885b04341bc4dec7bb44beb752f6a1);
+            
+        
+
+        circle_marker_2a238dafd5607168851cc4386cf23426.bindPopup(popup_209c92a356ff9775cb26b65cb58594e1)
+        ;
+
+        
+    
+    
+            var circle_marker_0da69fa81d4f8687ce97a5b3c2e6931c = L.circleMarker(
+                [43.0041371, 41.014552],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_13b48022abc2d1ad02fd99ba1cc48410 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6738dfaa011aefa33cd78575643e941 = $(`<div id="html_b6738dfaa011aefa33cd78575643e941" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Сухум</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_13b48022abc2d1ad02fd99ba1cc48410.setContent(html_b6738dfaa011aefa33cd78575643e941);
+            
+        
+
+        circle_marker_0da69fa81d4f8687ce97a5b3c2e6931c.bindPopup(popup_13b48022abc2d1ad02fd99ba1cc48410)
+        ;
+
+        
+    
+    
+            var circle_marker_d5c9ec90a719709d225cfc57a9006321 = L.circleMarker(
+                [54.2543165, 28.463538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_348afb4f4ff381cb75eaad779bac2cb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a993a4af7992d41486e816da8b8aa16b = $(`<div id="html_a993a4af7992d41486e816da8b8aa16b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Гагры</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_348afb4f4ff381cb75eaad779bac2cb4.setContent(html_a993a4af7992d41486e816da8b8aa16b);
+            
+        
+
+        circle_marker_d5c9ec90a719709d225cfc57a9006321.bindPopup(popup_348afb4f4ff381cb75eaad779bac2cb4)
+        ;
+
+        
+    
+    
+            var circle_marker_c4341e1649657f3ad4241c4be18b6e04 = L.circleMarker(
+                [44.7239578, 37.7690711],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_35a579a43c36ca93fcf3f9a08d723a0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bee7331cda1184abb7be1ea159896918 = $(`<div id="html_bee7331cda1184abb7be1ea159896918" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Новороссийск</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_35a579a43c36ca93fcf3f9a08d723a0e.setContent(html_bee7331cda1184abb7be1ea159896918);
+            
+        
+
+        circle_marker_c4341e1649657f3ad4241c4be18b6e04.bindPopup(popup_35a579a43c36ca93fcf3f9a08d723a0e)
+        ;
+
+        
+    
+    
+            var circle_marker_3650f0ad9fce972134c7e4a62dfd32ef = L.circleMarker(
+                [41.8412404, 43.3838704],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_f80fa75ea5f01fb26f8fe6779b4a970a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_712f0e6f88a7848c0859f4272ef7ef8b = $(`<div id="html_712f0e6f88a7848c0859f4272ef7ef8b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Боржом</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_f80fa75ea5f01fb26f8fe6779b4a970a.setContent(html_712f0e6f88a7848c0859f4272ef7ef8b);
+            
+        
+
+        circle_marker_3650f0ad9fce972134c7e4a62dfd32ef.bindPopup(popup_f80fa75ea5f01fb26f8fe6779b4a970a)
+        ;
+
+        
+    
+    
+            var circle_marker_0952c804cd1d3bb5d1456da2cdbb1dcf = L.circleMarker(
+                [45.7684014, 39.0261044],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_81ae691de750109747e2baf8df432ca2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c14c089df161feb30c52acfd7a4aa97 = $(`<div id="html_5c14c089df161feb30c52acfd7a4aa97" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Кубань</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_81ae691de750109747e2baf8df432ca2.setContent(html_5c14c089df161feb30c52acfd7a4aa97);
+            
+        
+
+        circle_marker_0952c804cd1d3bb5d1456da2cdbb1dcf.bindPopup(popup_81ae691de750109747e2baf8df432ca2)
+        ;
+
+        
+    
+    
+            var circle_marker_5e3b32975a605db8f42c088f96c1fbb6 = L.circleMarker(
+                [48.346275, 38.4418225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_6163b23165e2ad98f6ed3c6a5956b31d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87b078e9daed121470a8c9cc0b8f6918 = $(`<div id="html_87b078e9daed121470a8c9cc0b8f6918" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>ст. Дебальцево</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_6163b23165e2ad98f6ed3c6a5956b31d.setContent(html_87b078e9daed121470a8c9cc0b8f6918);
+            
+        
+
+        circle_marker_5e3b32975a605db8f42c088f96c1fbb6.bindPopup(popup_6163b23165e2ad98f6ed3c6a5956b31d)
+        ;
+
+        
+    
+    
+            var circle_marker_70d4ddbfbafee6f94e34deafa9a5b38f = L.circleMarker(
+                [48.5894123, 38.0020994],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_fde642d6ba68275404baa64a8e890ee3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59092c5a30d92434fb061d341c6a8c3f = $(`<div id="html_59092c5a30d92434fb061d341c6a8c3f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Артемовск</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_fde642d6ba68275404baa64a8e890ee3.setContent(html_59092c5a30d92434fb061d341c6a8c3f);
+            
+        
+
+        circle_marker_70d4ddbfbafee6f94e34deafa9a5b38f.bindPopup(popup_fde642d6ba68275404baa64a8e890ee3)
+        ;
+
+        
+    
+    
+            var circle_marker_74aa4415d22c9f1435b4829865224e9f = L.circleMarker(
+                [52.9709262, 36.0642127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_8c7844a3879a6fd98146bef3e7b0b2c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c5327b098e16ca7896a4593b1107c87 = $(`<div id="html_4c5327b098e16ca7896a4593b1107c87" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Орел</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_8c7844a3879a6fd98146bef3e7b0b2c4.setContent(html_4c5327b098e16ca7896a4593b1107c87);
+            
+        
+
+        circle_marker_74aa4415d22c9f1435b4829865224e9f.bindPopup(popup_8c7844a3879a6fd98146bef3e7b0b2c4)
+        ;
+
+        
+    
+    
+            var circle_marker_3179ccbf9c5cc0af0eb8efc6c6dbb3ed = L.circleMarker(
+                [55.7516631, 37.6095344],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_eef6caa838485570e3bf614c3a5ca397 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_061de2cd111f78b15e649a88bcaed297 = $(`<div id="html_061de2cd111f78b15e649a88bcaed297" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>СССР</b><br>"        <i>Мотопробег и производство советских мотоциклов</i>     </div>     </div>`)[0];
+                popup_eef6caa838485570e3bf614c3a5ca397.setContent(html_061de2cd111f78b15e649a88bcaed297);
+            
+        
+
+        circle_marker_3179ccbf9c5cc0af0eb8efc6c6dbb3ed.bindPopup(popup_eef6caa838485570e3bf614c3a5ca397)
+        ;
+
+        
+    
+    
+            var circle_marker_80fa4c6df35050ece94f1693fc21f416 = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_6a2a6de648be154d9e70db3fb02dba94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e38dc9b8491da45c411055dedd0dd12 = $(`<div id="html_0e38dc9b8491da45c411055dedd0dd12" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Бельгия</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_6a2a6de648be154d9e70db3fb02dba94.setContent(html_0e38dc9b8491da45c411055dedd0dd12);
+            
+        
+
+        circle_marker_80fa4c6df35050ece94f1693fc21f416.bindPopup(popup_6a2a6de648be154d9e70db3fb02dba94)
+        ;
+
+        
+    
+    
+            var circle_marker_26f2178d4fb2654c08965535cba60894 = L.circleMarker(
+                [44.6218445, 33.5666107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_8f4484177326aaf660d24c9d80dc961e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb7619cb7f58b30de5c83421c2f47446 = $(`<div id="html_bb7619cb7f58b30de5c83421c2f47446" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Голландия</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_8f4484177326aaf660d24c9d80dc961e.setContent(html_bb7619cb7f58b30de5c83421c2f47446);
+            
+        
+
+        circle_marker_26f2178d4fb2654c08965535cba60894.bindPopup(popup_8f4484177326aaf660d24c9d80dc961e)
+        ;
+
+        
+    
+    
+            var circle_marker_d5c7a7899383160ea0092135c6e5fe2f = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_4abe18efd5291f2f51c9658d3e833d15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30e7a96d75731250e9067042ff52df6d = $(`<div id="html_30e7a96d75731250e9067042ff52df6d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>США</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_4abe18efd5291f2f51c9658d3e833d15.setContent(html_30e7a96d75731250e9067042ff52df6d);
+            
+        
+
+        circle_marker_d5c7a7899383160ea0092135c6e5fe2f.bindPopup(popup_4abe18efd5291f2f51c9658d3e833d15)
+        ;
+
+        
+    
+    
+            var circle_marker_7c9dd9e48f81b854693bf48f68067e10 = L.circleMarker(
+                [43.9055311, 42.7157283],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_3c86580f4d2b8b23cea64608123c9c43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6bfc1e1c0357a3ad80bea9fa9534ddc = $(`<div id="html_e6bfc1e1c0357a3ad80bea9fa9534ddc" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Кисловодск</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_3c86580f4d2b8b23cea64608123c9c43.setContent(html_e6bfc1e1c0357a3ad80bea9fa9534ddc);
+            
+        
+
+        circle_marker_7c9dd9e48f81b854693bf48f68067e10.bindPopup(popup_3c86580f4d2b8b23cea64608123c9c43)
+        ;
+
+        
+    
+    
+            var circle_marker_24b5cb5a4d824cbe76104788444cc744 = L.circleMarker(
+                [44.6054434, 33.5220842],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_ea825546a99cce0d967a782f63579127 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7a25df5d55fd9ebae2cf8f455e9a5d8 = $(`<div id="html_b7a25df5d55fd9ebae2cf8f455e9a5d8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Севастополь</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_ea825546a99cce0d967a782f63579127.setContent(html_b7a25df5d55fd9ebae2cf8f455e9a5d8);
+            
+        
+
+        circle_marker_24b5cb5a4d824cbe76104788444cc744.bindPopup(popup_ea825546a99cce0d967a782f63579127)
+        ;
+
+        
+    
+    
+            var circle_marker_38e9db2cf6b3b73cb8c73425d75eabca = L.circleMarker(
+                [42.3780556, 42.7071004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_79459f3e5ecd6e46c4264ebfb720d598 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_829784dc2aadd47d8234d9187689d187 = $(`<div id="html_829784dc2aadd47d8234d9187689d187" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Рион</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_79459f3e5ecd6e46c4264ebfb720d598.setContent(html_829784dc2aadd47d8234d9187689d187);
+            
+        
+
+        circle_marker_38e9db2cf6b3b73cb8c73425d75eabca.bindPopup(popup_79459f3e5ecd6e46c4264ebfb720d598)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb4b9cfcee26924e8e251635c129a64 = L.circleMarker(
+                [51.5074456, -0.1277653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_0175bc109387135b3561d99c09681dfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28bdae1e85329523cfa0bbf2daba1c09 = $(`<div id="html_28bdae1e85329523cfa0bbf2daba1c09" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Лондон</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_0175bc109387135b3561d99c09681dfc.setContent(html_28bdae1e85329523cfa0bbf2daba1c09);
+            
+        
+
+        circle_marker_4cb4b9cfcee26924e8e251635c129a64.bindPopup(popup_0175bc109387135b3561d99c09681dfc)
+        ;
+
+        
+    
+    
+            var circle_marker_745056783e09cc9f3f469c8a66576d7b = L.circleMarker(
+                [48.8588897, 2.320041],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_9b366e6ba53f4f8e967c495fd7bba1f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd62424390c776bf3cb5f3f4d99c0e7c = $(`<div id="html_cd62424390c776bf3cb5f3f4d99c0e7c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Париж</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_9b366e6ba53f4f8e967c495fd7bba1f5.setContent(html_cd62424390c776bf3cb5f3f4d99c0e7c);
+            
+        
+
+        circle_marker_745056783e09cc9f3f469c8a66576d7b.bindPopup(popup_9b366e6ba53f4f8e967c495fd7bba1f5)
+        ;
+
+        
+    
+    
+            var circle_marker_e29ba2e0b023f6cfba972a67b0820cef = L.circleMarker(
+                [51.2211097, 4.3997081],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6939bb6e40dec5b324c1ee43640593a3);
+        
+    
+        var popup_4d1d64991a597913447a820185b10064 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_955501e0d7a1ab6532c5d5337b263d55 = $(`<div id="html_955501e0d7a1ab6532c5d5337b263d55" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:1.3;"> 		f"<b style='font-size:14px;'>Антверпен</b><br>"        <i>nan</i>     </div>     </div>`)[0];
+                popup_4d1d64991a597913447a820185b10064.setContent(html_955501e0d7a1ab6532c5d5337b263d55);
+            
+        
+
+        circle_marker_e29ba2e0b023f6cfba972a67b0820cef.bindPopup(popup_4d1d64991a597913447a820185b10064)
+        ;
+
+        
+    
+    
+            marker_cluster_6939bb6e40dec5b324c1ee43640593a3.addTo(map_6286890d798775628d431203af20d11d);
+        
+    
+            var layer_control_205e96ba08f54217e83ef0b97e821865_layers = {
+                base_layers : {
+                    "OSM" : tile_layer_d22b0c8f7eed70084f7d92e7ee8544eb,
+                    "Physical map" : tile_layer_3ed7309068fc02bbe9b7ecc805f2ff93,
+                },
+                overlays :  {
+                    "macro_element_6939bb6e40dec5b324c1ee43640593a3" : marker_cluster_6939bb6e40dec5b324c1ee43640593a3,
+                },
+            };
+            let layer_control_205e96ba08f54217e83ef0b97e821865 = L.control.layers(
+                layer_control_205e96ba08f54217e83ef0b97e821865_layers.base_layers,
+                layer_control_205e96ba08f54217e83ef0b97e821865_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_6286890d798775628d431203af20d11d);
+
+        
+</script>
+</html>
